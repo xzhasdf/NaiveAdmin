@@ -1,6 +1,6 @@
 .hita-status-tag-default-light {
   background-color: #f1f1f1;
-  color: #2e3238;
+  color: #757575;
 }
 
 .hita-status-tag-default-dark {
@@ -49,23 +49,13 @@
 }
 
 .hita-status-tag-error-light {
-  background-color: #fff8f8;
-  color: #f52d5b;
+  background-color: #f20d0d0f;
+  color: #f01414;
 }
 
 .hita-status-tag-error-dark {
   background-color: #3f161f;
   color: #f7a7b9;
-}
-
-.hita-status-tag-black-light {
-  background-color: #313131;
-  color: #ffffff;
-}
-
-.hita-status-tag-black-dark {
-  background-color: #111111;
-  color: #cdcdcd;
 }
 
 .hita-status-tag-default-shape {

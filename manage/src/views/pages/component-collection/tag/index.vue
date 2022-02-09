@@ -3,8 +3,8 @@
     <n-space vertical size="large">
       <n-alert title="状态标签 StatusTag" type="info">
         props: <br />
-        type - 'default' | 'disabled' | 'black' | 'info' | 'success' | 'warning'
-        | 'error' <br />
+        type - 'default' | 'disabled' | 'info' | 'success' | 'warning' | 'error'
+        <br />
         shape - 'default' | 'square' | 'round' <br />
       </n-alert>
       <n-card title="演示">
@@ -39,36 +39,6 @@
             <status-tag type="error" shape="square">暗影岛</status-tag>
             <status-tag type="error" shape="round">暗影岛</status-tag>
           </n-space>
-          <n-space align="center">
-            <status-tag type="black">恕瑞玛</status-tag>
-            <status-tag type="black" shape="square">恕瑞玛</status-tag>
-            <status-tag type="black" shape="round">恕瑞玛</status-tag>
-          </n-space>
-          <n-space align="center" v-for="theme in store.getters.getMainColors">
-            <status-tag
-              :style="{
-                backgroundColor: theme.common.primaryColor,
-                color: theme.common.baseColor,
-              }"
-              >戏命师</status-tag
-            >
-            <status-tag
-              shape="square"
-              :style="{
-                backgroundColor: theme.common.primaryColor,
-                color: theme.common.baseColor,
-              }"
-              >望远烬</status-tag
-            >
-            <status-tag
-              shape="round"
-              :style="{
-                backgroundColor: theme.common.primaryColor,
-                color: theme.common.baseColor,
-              }"
-              >红领烬</status-tag
-            >
-          </n-space>
         </n-space>
       </n-card>
     </n-space>
@@ -79,8 +49,6 @@
 import { NSpace, NAlert, NCard } from 'naive-ui'
 import StatusTag from '@/components/StatusTag/StatusTag'
 import PagePanel from '@/components/PagePanel.vue'
-import { useStore } from '@/hooks/useStore'
-const store = useStore()
 </script>
 
 <style scoped></style>
